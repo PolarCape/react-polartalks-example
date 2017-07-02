@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class NavigationComponent extends Component {
     render() {
@@ -17,9 +18,10 @@ class NavigationComponent extends Component {
                 </span>
 
                 <div className="nav-right nav-menu">
-                    <a className="nav-item">
-                    Home
-                    </a>
+                    <Link to="/" className="nav-item">Home</Link>
+                    <Link to="/simple-route" className="nav-item">Simple Route</Link>
+                    <Link to="/route-with-param/JohnDoe" className="nav-item">Route with param</Link>
+                    <Link to="/guarded-route" className="nav-item">Guarded Route</Link>
 
                     <div className="nav-item">
                     <div className="field is-grouped">

@@ -4,7 +4,7 @@ class ChapterDetailsComponent extends Component {
     render() {
         return (
             <section>
-                <div className="container">
+                <div className="container has-text-centered">
                     <h1 className="title">Routing</h1>
                 </div>
             </section>
