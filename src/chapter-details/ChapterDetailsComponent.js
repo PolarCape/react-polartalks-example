@@ -5,7 +5,7 @@ class ChapterDetailsComponent extends Component {
         return (
             <section>
                 <div className="container">
-                    
+                    <h1 className="title">Routing</h1>
                 </div>
             </section>
         );
