@@ -5,6 +5,8 @@ import './App.css';
 import NavigationComponent from './navigation/NavigationComponent';
 import LandingComponent from './landing/LandingComponent';
 import LocalStateManagement from './local-state-management/LocalStateManagementComponent';
+import CounterComponent from './counter/CounterComponent';
+import ResultsComponent from './results/ResultsComponent';
 
 class App extends Component {
   render() {
@@ -15,6 +17,8 @@ class App extends Component {
 
           <Route exact path="/" component={LandingComponent} />
           <Route path="/local" component={LocalStateManagement} />
+          <Route path="/counter" component={CounterComponent} />
+          <Route path="/results" component={ResultsComponent} />
         </div>
       </Router>
     );
