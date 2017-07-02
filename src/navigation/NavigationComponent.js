@@ -19,9 +19,9 @@ class NavigationComponent extends Component {
 
                 <div className="nav-right nav-menu">
                     <Link to="/" className="nav-item">Home</Link>
-                    <Link to="/simple-route" className="nav-item">Simple Route</Link>
-                    <Link to="/route-with-param/JohnDoe" className="nav-item">Route with param</Link>
-                    <Link to="/guarded-route" className="nav-item">Guarded Route</Link>
+                    <Link to="/local" className="nav-item">Local State</Link>
+                    <Link to="/counter" className="nav-item">Counter</Link>
+                    <Link to="/results" className="nav-item">Results</Link>
 
                     <div className="nav-item">
                     <div className="field is-grouped">
