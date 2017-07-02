@@ -26,9 +26,9 @@ class NavigationComponent extends Component {
                     <div className="nav-item">
                     <div className="field is-grouped">
                         <p className="control">
-                        <a className="button" >
+                        <a className="button" href="https://github.com/PolarCape/react-polartalks-example" target="_blank">
                             <span className="icon">
-                            <i className="fa fa-github"></i>
+                                <i className="fa fa-github"></i>
                             </span>
                             <span>GitHub</span>
                         </a>
