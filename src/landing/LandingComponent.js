@@ -16,7 +16,7 @@ class LandingComponent extends Component {
                             <h2 className="subtitle">
                                 Angular vs React
                             </h2>
-                            <img width="150" src={logo} />
+                            <img width="150" src={logo} alt="Logo" />
                         </div>
                     </div>
                 </section>
