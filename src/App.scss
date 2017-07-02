@@ -1,0 +1,14 @@
+// 1. Import the initial variables
+@import "bulma/sass/utilities/initial-variables";
+
+// 2. Set your own initial variables
+// Update blue
+$blue: #37a3dc;
+// Add pink and its invert
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $blue;
+
+// 4. Import the rest of Bulma
+@import "bulma/bulma";
