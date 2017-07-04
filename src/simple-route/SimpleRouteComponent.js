@@ -18,8 +18,24 @@ class SimpleRouteComponent extends Component {
     }
 
     handleSubmit(event) {
-        console.log('Form submitted: ', this.state);
-        event.preventDefault();
+        if(this.state.name && this.state.surname){
+            console.log('Form submitted: ', this.state);
+            event.preventDefault();
+        }
+    }
+
+    getInput(type, placeholder){
+        let classes = 'input';
+        if(!this.state[type])
+            classes += ' is-danger';
+        return (
+            <input name={type}
+                   className={classes}
+                   type="text"
+                   placeholder={placeholder}
+                   value={this.state[type]}
+                   onChange={this.handleChange}/>
+        )
     }
 
     render() {
@@ -29,23 +45,13 @@ class SimpleRouteComponent extends Component {
                     <div className="field">
                         <label className="label">Name</label>
                         <p className="control">
-                            <input name="name"
-                                   className="input"
-                                   type="text"
-                                   placeholder="John"
-                                   value={this.state.name}
-                                   onChange={this.handleChange}/>
+                            {this.getInput('name', 'John')}
                         </p>
                     </div>
                     <div className="field">
                         <label className="label">Surname</label>
                         <p className="control">
-                            <input name="surname"
-                                   className="input"
-                                   type="text"
-                                   placeholder="Doe"
-                                   value={this.state.surname}
-                                   onChange={this.handleChange}/>
+                            {this.getInput('surname', 'Doe')}
                         </p>
                     </div>
                     <div className="field is-grouped">
