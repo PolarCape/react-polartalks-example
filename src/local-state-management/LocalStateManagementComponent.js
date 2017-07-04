@@ -10,7 +10,13 @@ class LocalStateManagementComponent extends Component {
             firstName: 'John',
             lastName: 'Doe',
             age: 26
-        }
+        };
+
+        this.changeFirstName = this.changeFirstName.bind(this);
+    }
+
+    changeFirstName() {
+        this.setState({ firstName: 'Jane' });
     }
 
     render() {
@@ -18,13 +24,15 @@ class LocalStateManagementComponent extends Component {
 
         return (
             <section>
-                <div className="container">
+                <div className="container has-text-centered">
                     <h1 className="title">Local Variables</h1>
                     <p>{firstName}</p>
                     <p>{lastName}</p>
                     <p>{age}</p>
 
                     <DisplayFullNameComponent firstName={firstName} lastName={lastName} />
+
+                    <button onClick={this.changeFirstName} className="button">Update first name</button>
                 </div>
             </section>
         );
